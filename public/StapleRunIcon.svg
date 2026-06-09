@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definition for nice modern gradients -->
+  <defs>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#047857" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Clean rounded background curve conforming to standard maskable frames -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#emeraldGrad)" />
+
+  <!-- Center Icon Graphic: High-speed shopping bag & cart combined -->
+  <g transform="translate(4, -10)" filter="url(#subtleShadow)">
+    <!-- Motion lines representing "Run" -->
+    <path d="M120 220 H180" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.4" />
+    <path d="M100 270 H160" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.75" />
+    <path d="M130 320 H190" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Shopping bag handle -->
+    <path d="M256 180 C230 180 216 195 216 220" stroke="#ffffff" stroke-width="18" fill="none" stroke-linecap="round" />
+    <path d="M256 180 C282 180 296 195 296 220" stroke="#ffffff" stroke-width="18" fill="none" stroke-linecap="round" />
+
+    <!-- Main shopping bag container -->
+    <path d="M192 230
+             L210 380 
+             C212 395, 222 400, 235 400 
+             L277 400 
+             C290 400, 300 395, 302 380 
+             L320 230 
+             C322 215, 312 210, 300 210
+             L212 210
+             C200 210, 190 215, 192 230 Z" 
+          fill="#ffffff" />
+
+    <!-- Fast forward lightning / spark cut -->
+    <path d="M235 300 L275 250 L260 310 L285 310 L245 365 L255 315 L235 315 Z" fill="url(#emeraldGrad)" />
+  </g>
+</svg>
