@@ -55,7 +55,7 @@ export default function Page() {
   useEffect(() => {
     const t = setInterval(() => {
       setIndex((i) => (i + 1) % screenshots.length);
-    }, 5500);
+    }, 5000);
 
     return () => clearInterval(t);
   }, []);
@@ -89,14 +89,19 @@ export default function Page() {
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="pt-20 pb-12 text-center max-w-3xl mx-auto px-6 space-y-6">
-        <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-          Your shopping list should remember itself.
+      {/* HERO (REFINED) */}
+      <section className="pt-20 pb-14 text-center max-w-3xl mx-auto px-6 space-y-6">
+
+        <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+          Your grocery list should remember itself.
         </h1>
 
         <p className="text-zinc-600 text-lg">
-          StapleRun automatically remembers what you repeatedly buy and rebuilds your shopping list instantly.
+          StapleRun remembers what you repeatedly buy and rebuilds your shopping list in seconds.
+        </p>
+
+        <p className="text-xs text-zinc-500">
+          Built for people who buy the same essentials every week.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
@@ -104,7 +109,7 @@ export default function Page() {
             href={APP_STORE_URL}
             className="bg-zinc-900 text-white px-6 py-3 rounded-xl text-sm font-semibold"
           >
-            🍎 Download for iOS
+            🍎 Download for iPhone
           </a>
 
           <a
@@ -114,47 +119,48 @@ export default function Page() {
             📱 Download for Android
           </a>
         </div>
+
+        <p className="text-xs text-zinc-400">
+          Save 3–5 minutes every shopping trip — automatically.
+        </p>
+
       </section>
 
-      {/* BEFORE / AFTER (FIXED ALIGNMENT) */}
+      {/* BEFORE / AFTER */}
       <section className="py-14 bg-zinc-50 border-y border-zinc-100">
         <div className="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-sm">
 
-          {/* BEFORE */}
           <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
             <h3 className="font-bold mb-4">Before StapleRun</h3>
-
             <ul className="space-y-2 text-zinc-600 pl-4">
-              <li className="pl-2">• Rewriting the same shopping list every week</li>
-              <li className="pl-2">• Forgetting items you always buy</li>
-              <li className="pl-2">• Scattered notes across apps</li>
-              <li className="pl-2">• Rebuilding lists from scratch</li>
+              <li>• Rewriting the same shopping list every week</li>
+              <li>• Forgetting items you always buy</li>
+              <li>• Scattered notes across apps</li>
+              <li>• Rebuilding lists from scratch</li>
             </ul>
           </div>
 
-          {/* AFTER */}
           <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
             <h3 className="font-bold mb-4">After StapleRun</h3>
-
             <ul className="space-y-2 text-zinc-900 pl-4">
-              <li className="pl-2">✔ Your list remembers itself</li>
-              <li className="pl-2">✔ One-click rebuild every time</li>
-              <li className="pl-2">✔ Always complete essentials</li>
-              <li className="pl-2">✔ Zero retyping</li>
+              <li>✔ Your list remembers itself</li>
+              <li>✔ One-click rebuild every time</li>
+              <li>✔ Always complete essentials</li>
+              <li>✔ Zero retyping</li>
             </ul>
           </div>
 
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* HOW IT WORKS (CLEARER) */}
       <section className="py-14 text-center max-w-3xl mx-auto px-6 space-y-6">
         <h2 className="text-2xl font-bold">How it works</h2>
 
         <div className="text-sm text-zinc-600 space-y-3">
           <p>1. Add items while you shop</p>
-          <p>2. StapleRun learns what you repeat</p>
-          <p>3. Rebuild your list instantly next time</p>
+          <p>2. The app detects repeated purchases over time</p>
+          <p>3. Your next shopping list is automatically rebuilt</p>
         </div>
       </section>
 
@@ -165,7 +171,7 @@ export default function Page() {
         </h2>
 
         <p className="text-zinc-600 text-sm">
-          From groceries to cleaning supplies and toiletries — StapleRun turns repeated behavior into reusable Staples.
+          StapleRun turns repeat purchases into “Staples” — automatically learning what you buy most often.
         </p>
       </section>
 
@@ -182,7 +188,7 @@ export default function Page() {
               initial={{ opacity: 0, scale: 0.92, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.92, y: -20 }}
-              transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="absolute"
             >
               <ScreenshotFrame
@@ -194,25 +200,25 @@ export default function Page() {
         </div>
       </section>
 
-      {/* HOUSEHOLD */}
+      {/* HOUSEHOLD (REFINED) */}
       <section className="py-14 bg-zinc-50 border-y border-zinc-100 text-center px-6">
         <h3 className="text-lg font-bold mb-2">
           Built for individuals, couples, and households
         </h3>
 
         <p className="text-sm text-zinc-600 max-w-2xl mx-auto">
-          Optional secure sync lets you share shopping lists with family members or roommates in real time.
+          Optional sync for couples and households keeps shopping lists aligned in real time.
         </p>
       </section>
 
       {/* CTA */}
       <section className="py-20 text-center max-w-2xl mx-auto px-6 space-y-6">
         <h2 className="text-3xl font-bold">
-          Make grocery shopping effortless
+          Stop rebuilding your list every week
         </h2>
 
         <p className="text-zinc-600 text-sm">
-          Stop rebuilding lists. Let your routine build itself.
+          Let your routine automatically build your grocery list.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -220,7 +226,7 @@ export default function Page() {
             href={APP_STORE_URL}
             className="bg-zinc-900 text-white px-6 py-3 rounded-xl text-sm font-semibold"
           >
-            🍎 Get the App
+            🍎 Get StapleRun
           </a>
 
           <a
@@ -235,17 +241,13 @@ export default function Page() {
       {/* FOOTER */}
       <footer className="border-t border-zinc-100 py-10 text-center">
         <p className="text-xs text-zinc-500 mb-4">
-          Privacy-first design • No signup required • Optional household sync
+          Privacy-first • No signup required • Optional household sync
         </p>
 
         <div className="flex items-center justify-center gap-3 text-xs text-zinc-400">
-          <a href="/privacy" className="hover:text-zinc-600">
-            Privacy Policy
-          </a>
+          <a href="/privacy">Privacy Policy</a>
           <span>•</span>
-          <a href="/terms" className="hover:text-zinc-600">
-            Terms of Service
-          </a>
+          <a href="/terms">Terms</a>
         </div>
 
         <p className="mt-4 text-[11px] text-zinc-300">
