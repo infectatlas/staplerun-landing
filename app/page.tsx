@@ -130,25 +130,25 @@ export default function Page() {
       <section className="py-14 bg-zinc-50 border-y border-zinc-100">
         <div className="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-sm">
 
-          <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
-            <h3 className="font-bold mb-4">Before StapleRun</h3>
-            <ul className="space-y-2 text-zinc-600 pl-4">
-              <li>• Rewriting the same shopping list every week</li>
-              <li>• Forgetting items you always buy</li>
-              <li>• Scattered notes across apps</li>
-              <li>• Rebuilding lists from scratch</li>
-            </ul>
-          </div>
+            <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
+              <h3 className="font-bold mb-4">Before StapleRun</h3>
+              <ul className="list-disc pl-5 space-y-2 text-zinc-600">
+                <li>Rewriting the same shopping list every week</li>
+                <li>Forgetting items you always buy</li>
+                <li>Scattered notes across apps</li>
+                <li>Rebuilding lists from scratch</li>
+              </ul>
+            </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
-            <h3 className="font-bold mb-4">After StapleRun</h3>
-            <ul className="space-y-2 text-zinc-900 pl-4">
-              <li>✔ Your list remembers itself</li>
-              <li>✔ One-click rebuild every time</li>
-              <li>✔ Always complete essentials</li>
-              <li>✔ Zero retyping</li>
-            </ul>
-          </div>
+            <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
+              <h3 className="font-bold mb-4">After StapleRun</h3>
+              <ul className="space-y-2 text-zinc-900 pl-4">
+                <li>✔ Your list remembers itself</li>
+                <li>✔ One-click rebuild every time</li>
+                <li>✔ Always complete essentials</li>
+                <li>✔ Zero retyping</li>
+              </ul>
+            </div>
 
         </div>
       </section>
