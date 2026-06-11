@@ -240,16 +240,22 @@ export default function Page() {
         </div>
       </section>
 
-      {/* FOOTER */}
+            {/* FOOTER */}
       <footer className="border-t border-zinc-100 py-10 text-center">
         <p className="text-xs text-zinc-500 mb-4">
           Privacy-first • No signup required • Optional household sync
         </p>
 
-        <div className="flex items-center justify-center gap-3 text-xs text-zinc-400">
+        <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-zinc-400">
           <a href="/privacy">Privacy Policy</a>
+
           <span>•</span>
-          <a href="/terms">Terms</a>
+
+          <a href="/terms">Terms of Service</a>
+
+          <span>•</span>
+
+          <a href="/delete-account">Delete Account</a>
         </div>
 
         <p className="mt-4 text-[11px] text-zinc-300">
