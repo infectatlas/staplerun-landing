@@ -166,7 +166,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="text-sm text-zinc-900 font-medium">
-            support@staplerun.app
+            support@staplerun.com
           </p>
 
         </section>
