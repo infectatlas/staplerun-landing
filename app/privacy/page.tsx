@@ -15,13 +15,13 @@ export default function PrivacyPage() {
         {/* INTRO */}
         <section className="space-y-3 text-sm text-zinc-700">
           <p>
-            StapleRun is designed to help you manage recurring shopping essentials by learning what you
-            repeatedly buy and storing them as reusable “Staples.”
+            StapleRun helps you manage recurring shopping essentials by learning what you repeatedly
+            buy and storing them as reusable “Staples.”
           </p>
 
           <p>
-            This Privacy Policy explains how data is handled across the app, including optional household
-            syncing features.
+            This Privacy Policy explains how data is handled across the app, including optional cloud
+            syncing and household collaboration features.
           </p>
         </section>
 
@@ -31,25 +31,26 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">1. Data We Collect</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun collects only the data necessary to provide its core functionality:
+            StapleRun collects only the data necessary to provide core functionality:
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
             <li>
-              <strong>Shopping activity data</strong> — items you add, check off, and reuse to build your
-              “Staples” memory.
+              <strong>Shopping activity data</strong> — items you add, complete, and reuse to build your shopping lists.
             </li>
             <li>
-              <strong>Staples data</strong> — your saved recurring essentials (e.g. groceries, toiletries,
-              household items).
+              <strong>Staples data</strong> — recurring items derived from your shopping behavior.
             </li>
             <li>
-              <strong>Usage preferences</strong> — optional settings like categories, collections, and UI preferences.
+              <strong>Usage preferences</strong> — optional settings such as categories and interface preferences.
+            </li>
+            <li>
+              <strong>Authentication identifiers</strong> — Firebase user IDs or anonymous session identifiers used to manage login state and sync data.
             </li>
           </ul>
 
           <p className="text-xs text-zinc-500">
-            No financial, payment, or sensitive personal identity data is collected.
+            StapleRun does not collect payment or financial information.
           </p>
 
         </section>
@@ -62,8 +63,8 @@ export default function PrivacyPage() {
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
             <li>To remember items you repeatedly purchase</li>
             <li>To generate instant shopping lists from your Staples</li>
-            <li>To improve list organization and suggestions</li>
-            <li>To sync data across devices when enabled</li>
+            <li>To improve list organization and recommendations</li>
+            <li>To sync data across devices when you enable account login</li>
           </ul>
 
         </section>
@@ -73,19 +74,15 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-semibold">3. Local and Cloud Storage</h2>
 
-          <p className="text-sm text-zinc-700">
-            StapleRun supports two storage modes:
-          </p>
-
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
             <li>
-              <strong>Sandbox Mode (default)</strong> — All data is stored locally on your device.
-              No account is required.
+              <strong>Sandbox Mode</strong> — Data is stored locally on your device. A temporary anonymous
+              identifier may be generated to enable limited functionality.
             </li>
 
             <li>
-              <strong>Synced Mode (optional)</strong> — If enabled, your data is securely stored and
-              synchronized using cloud infrastructure to support multi-device access and household sharing.
+              <strong>Synced Mode</strong> — When you sign in, your data is securely stored in cloud
+              infrastructure and synchronized across devices.
             </li>
           </ul>
 
@@ -97,17 +94,18 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">4. Household Sharing (Optional)</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun allows optional household collaboration through secure invite links.
+            StapleRun supports optional household collaboration where users can join shared shopping lists
+            within a household group.
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
-            <li>Users can join shared shopping lists using an invite code</li>
-            <li>Changes sync in real-time between connected users</li>
-            <li>Only users explicitly added to a household can access shared data</li>
+            <li>Only authenticated users added to a household can access shared data</li>
+            <li>Changes sync in real time between household members</li>
+            <li>Access is controlled by the household owner</li>
           </ul>
 
           <p className="text-xs text-zinc-500">
-            Users control whether they participate in shared households at all times.
+            Data is not shared with third-party companies.
           </p>
 
         </section>
@@ -118,8 +116,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">5. Data Retention</h2>
 
           <p className="text-sm text-zinc-700">
-            Your data is retained as long as your account or local storage remains active.
-            You may delete your data at any time by clearing the app data or removing your account (if synced mode is enabled).
+            Data is retained until you delete it, remove your account, or clear local device storage.
+            You can delete your data at any time through the app settings.
           </p>
 
         </section>
@@ -130,8 +128,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">6. Security</h2>
 
           <p className="text-sm text-zinc-700">
-            Data transmitted in synced mode is encrypted in transit. Access to shared household data
-            is restricted to invited users only.
+            All data transmitted in synced mode is encrypted in transit using HTTPS/TLS.
+            Access to household data is restricted to authorized users only.
           </p>
 
         </section>
@@ -164,7 +162,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">9. Contact</h2>
 
           <p className="text-sm text-zinc-700">
-            If you have any questions about this Privacy Policy, you can contact:
+            If you have any questions, contact:
           </p>
 
           <p className="text-sm text-zinc-900 font-medium">
@@ -173,7 +171,7 @@ export default function PrivacyPage() {
 
         </section>
 
-        {/* FOOTER NOTE */}
+        {/* FOOTER */}
         <div className="pt-6 border-t border-zinc-100 text-xs text-zinc-400">
           Last updated: {new Date().getFullYear()}
         </div>

@@ -15,12 +15,12 @@ export default function TermsPage() {
         {/* INTRO */}
         <section className="space-y-3 text-sm text-zinc-700">
           <p>
-            These Terms of Service govern your use of StapleRun, a recurring essentials memory system
-            designed to help you manage and reuse shopping lists efficiently.
+            These Terms of Service govern your use of StapleRun, a shopping list and recurring
+            essentials memory system designed to help users manage and reuse shopping lists efficiently.
           </p>
 
           <p>
-            By using StapleRun, you agree to these terms.
+            By using StapleRun, you agree to these Terms.
           </p>
         </section>
 
@@ -30,31 +30,32 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">1. Service Description</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun allows users to create, reuse, and manage recurring shopping lists (“Staples”).
-            The app learns from your usage to help rebuild lists instantly for everyday shopping needs.
+            StapleRun allows users to create, manage, and reuse shopping lists (“Staples”).
+            The application learns from user activity to improve list rebuilding and organization.
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2 mt-3">
-            <li>Smart Staples memory system based on your shopping behavior</li>
-            <li>One-click rebuild of recurring shopping lists</li>
-            <li>Optional household sharing and synchronization</li>
-            <li>Offline-first sandbox mode for instant onboarding</li>
+            <li>Recurring shopping list memory system based on user activity</li>
+            <li>Instant rebuilding of previous shopping lists</li>
+            <li>Optional household collaboration features</li>
+            <li>Offline and cloud-based usage modes</li>
           </ul>
 
         </section>
 
-        {/* USER ACCOUNTS */}
+        {/* ACCOUNTS */}
         <section className="space-y-3">
 
           <h2 className="text-lg font-semibold">2. Accounts & Access</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun can be used in sandbox mode without creating an account.
-            If you choose to use synced or household features, an account may be required.
+            StapleRun may be used without creating an account in guest mode.
+            In this mode, data is stored locally on the device and may not persist across devices.
           </p>
 
           <p className="text-sm text-zinc-700">
-            You are responsible for maintaining the security of your account and any associated access credentials.
+            When using cloud sync or household features, an authenticated account may be required.
+            You are responsible for maintaining the security of your account and credentials.
           </p>
 
         </section>
@@ -65,30 +66,30 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">3. Data Usage</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun stores shopping list data, recurring item patterns, and user preferences
-            necessary to provide its core functionality.
+            StapleRun stores shopping list data, usage patterns, and preferences necessary
+            for core functionality including list creation, syncing, and recommendations.
           </p>
 
           <p className="text-sm text-zinc-700">
-            Data handling is further described in our Privacy Policy.
+            Data handling is described in our Privacy Policy.
           </p>
 
         </section>
 
-        {/* HOUSEHOLD SYNC */}
+        {/* HOUSEHOLD */}
         <section className="space-y-3">
 
-          <h2 className="text-lg font-semibold">4. Household Sharing (Optional)</h2>
+          <h2 className="text-lg font-semibold">4. Household Collaboration</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun supports optional household sharing through invite-based access.
-            Users may join shared shopping lists with family members, roommates, or partners.
+            StapleRun supports optional household collaboration where users can join shared shopping lists
+            within a household group using authenticated access.
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2 mt-3">
-            <li>Access is granted only via secure invite links or codes</li>
-            <li>All shared changes are synchronized across connected users</li>
-            <li>Users may leave shared households at any time</li>
+            <li>Only authenticated users added to a household group can access shared data</li>
+            <li>Changes are synchronized in real time across household members</li>
+            <li>Household access is managed by the household owner or creator</li>
           </ul>
 
         </section>
@@ -99,20 +100,20 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">5. Acceptable Use</h2>
 
           <p className="text-sm text-zinc-700">
-            You agree not to misuse StapleRun or attempt to disrupt its functionality.
-            This includes attempting to reverse engineer, exploit, or overload the system.
+            You agree not to misuse StapleRun, interfere with its operation, or attempt to access
+            systems or data you are not authorized to access.
           </p>
 
         </section>
 
-        {/* AVAILABILITY */}
+        {/* SERVICE LIMITATIONS */}
         <section className="space-y-3">
 
           <h2 className="text-lg font-semibold">6. Service Availability</h2>
 
           <p className="text-sm text-zinc-700">
             StapleRun is provided on an “as is” and “as available” basis.
-            We may update, modify, or discontinue features at any time without notice.
+            We may modify, suspend, or discontinue features at any time without liability.
           </p>
 
         </section>
@@ -123,12 +124,12 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">7. Limitation of Liability</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun is designed to assist with shopping organization but does not guarantee
-            completeness, accuracy, or availability of any list or recommendation.
+            StapleRun assists with shopping organization but does not guarantee accuracy,
+            completeness, or availability of any data or recommendations.
           </p>
 
           <p className="text-sm text-zinc-700">
-            We are not liable for any indirect or incidental damages resulting from use of the app.
+            We are not liable for indirect, incidental, or consequential damages arising from use of the app.
           </p>
 
         </section>
@@ -139,8 +140,12 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">8. Termination</h2>
 
           <p className="text-sm text-zinc-700">
-            You may stop using StapleRun at any time. We may suspend access if misuse or violation
-            of these terms is detected.
+            You may stop using StapleRun at any time.
+            We may suspend or terminate access if misuse or violation of these Terms is detected.
+          </p>
+
+          <p className="text-sm text-zinc-700">
+            Data deletion is governed by our Privacy Policy.
           </p>
 
         </section>
@@ -151,7 +156,8 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold">9. Changes to Terms</h2>
 
           <p className="text-sm text-zinc-700">
-            These Terms may be updated from time to time. Continued use of StapleRun constitutes acceptance of any updates.
+            We may update these Terms from time to time.
+            Continued use of StapleRun constitutes acceptance of the updated Terms.
           </p>
 
         </section>
