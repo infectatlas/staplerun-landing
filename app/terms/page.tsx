@@ -4,12 +4,28 @@ export default function TermsPage() {
       <div className="max-w-3xl mx-auto px-6 py-16 space-y-10">
 
         {/* HEADER */}
-        <header className="mb-10">
-          <a href="/" className="flex items-center gap-3 w-fit hover:opacity-80 transition">
-            <img src="/icon-512.png" className="w-8 h-8 rounded-lg" />
-            <span className="font-semibold text-sm">StapleRun</span>
-          </a>
-        </header>
+        <header className="sticky top-0 z-50 border-b border-zinc-100/60 backdrop-blur-md bg-white/75">
+  <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+
+    <a href="/" className="flex items-center gap-3">
+      <Image
+        src="/icon-512.png"
+        alt="StapleRun"
+        width={44}
+        height={44}
+        className="rounded-xl"
+      />
+      <span className="font-bold text-lg tracking-tight">
+        StapleRun
+      </span>
+    </a>
+
+    <div className="text-sm text-zinc-500 hidden sm:block">
+      Recurring essentials memory system
+    </div>
+
+  </div>
+</header>
 
         <div>
           <h1 className="text-3xl font-bold">Terms of Service</h1>
