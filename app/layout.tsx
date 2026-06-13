@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "StapleRun",
@@ -14,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen bg-white text-zinc-900">
+
+        {/* GLOBAL HEADER */}
+        <Header />
+
+        {/* PAGE CONTENT */}
+        {children}
+
+      </body>
     </html>
   );
 }
