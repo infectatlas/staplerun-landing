@@ -226,6 +226,8 @@ export default function Page() {
           <a href="/terms">Terms of Service</a>
           <span>•</span>
           <a href="/delete-account">Delete Account</a>
+          <span>•</span>
+          <a href="/support">Support</a>
         </div>
 
         <p className="mt-4 text-[11px] text-zinc-300">

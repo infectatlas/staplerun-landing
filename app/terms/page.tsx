@@ -4,6 +4,13 @@ export default function TermsPage() {
       <div className="max-w-3xl mx-auto px-6 py-16 space-y-10">
 
         {/* HEADER */}
+        <header className="mb-10">
+          <a href="/" className="flex items-center gap-3 w-fit hover:opacity-80 transition">
+            <img src="/icon-512.png" className="w-8 h-8 rounded-lg" />
+            <span className="font-semibold text-sm">StapleRun</span>
+          </a>
+        </header>
+
         <div>
           <h1 className="text-3xl font-bold">Terms of Service</h1>
           <p className="text-sm text-zinc-500 mt-2">
