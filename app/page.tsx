@@ -18,7 +18,12 @@ function ScreenshotFrame({ src, label }: { src: string; label: string }) {
         <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-b-xl z-20" />
 
         <div className="relative w-full aspect-[9/19.5] bg-white rounded-[2.5rem] overflow-hidden">
-          <Image src={src} alt={label} fill className="object-cover object-top" />
+          <Image
+            src={src}
+            alt={label}
+            fill
+            className="object-cover object-top"
+          />
         </div>
       </div>
 
@@ -40,22 +45,6 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-zinc-100/60 backdrop-blur-md bg-white/75">
-        <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-
-          <div className="flex items-center gap-3">
-            <Image src="/icon-512.png" alt="StapleRun" width={44} height={44} className="rounded-xl" />
-            <span className="font-bold text-lg tracking-tight">StapleRun</span>
-          </div>
-
-          <div className="text-sm text-zinc-500 hidden sm:block">
-            Recurring essentials memory system
-          </div>
-
-        </div>
-      </header>
 
       {/* HERO */}
       <section className="pt-20 pb-14 text-center max-w-3xl mx-auto px-6 space-y-6">

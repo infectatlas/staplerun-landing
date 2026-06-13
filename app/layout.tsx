@@ -15,14 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-white text-zinc-900">
-
-        {/* GLOBAL HEADER */}
+      <body>
         <Header />
-
-        {/* PAGE CONTENT */}
         {children}
-
       </body>
     </html>
   );
