@@ -31,26 +31,29 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">1. Data We Collect</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun collects only the data necessary to provide core functionality:
+            StapleRun only collects data necessary to provide core functionality:
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
             <li>
-              <strong>Shopping activity data</strong> — items you add, complete, and reuse to build your shopping lists.
+              <strong>Shopping activity data</strong> — items you add, complete, and manage in your lists.
             </li>
+
             <li>
               <strong>Staples data</strong> — recurring items derived from your shopping behavior.
             </li>
+
             <li>
-              <strong>Usage preferences</strong> — optional settings such as categories and interface preferences.
+              <strong>Usage preferences</strong> — optional settings such as categories, list organization, and interface preferences.
             </li>
+
             <li>
-              <strong>Authentication identifiers</strong> — Firebase user IDs or anonymous session identifiers used to manage login state and sync data.
+              <strong>Authentication identifiers</strong> — user IDs or anonymous device identifiers used to enable login, syncing, and household features.
             </li>
           </ul>
 
           <p className="text-xs text-zinc-500">
-            StapleRun does not collect payment or financial information.
+            StapleRun does not collect financial data, advertising identifiers, or sell user data.
           </p>
 
         </section>
@@ -61,10 +64,10 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">2. How We Use Your Data</h2>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
-            <li>To remember items you repeatedly purchase</li>
+            <li>To remember items you frequently purchase</li>
             <li>To generate instant shopping lists from your Staples</li>
             <li>To improve list organization and recommendations</li>
-            <li>To sync data across devices when you enable account login</li>
+            <li>To enable optional cloud sync across devices</li>
           </ul>
 
         </section>
@@ -75,15 +78,17 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">3. Local and Cloud Storage</h2>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
+
             <li>
-              <strong>Sandbox Mode</strong> — Data is stored locally on your device. A temporary anonymous
-              identifier may be generated to enable limited functionality.
+              <strong>Guest Mode (Local Storage)</strong> — Data is stored only on your device using browser storage.
+              A temporary device identifier may be generated to support local functionality. This data is not sent to third parties.
             </li>
 
             <li>
-              <strong>Synced Mode</strong> — When you sign in, your data is securely stored in cloud
-              infrastructure and synchronized across devices.
+              <strong>Synced Mode (Cloud Storage)</strong> — When you sign in, your data is securely stored in a cloud database
+              and synchronized across your devices.
             </li>
+
           </ul>
 
         </section>
@@ -94,18 +99,17 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">4. Household Sharing (Optional)</h2>
 
           <p className="text-sm text-zinc-700">
-            StapleRun supports optional household collaboration where users can join shared shopping lists
-            within a household group.
+            StapleRun allows optional household collaboration where authenticated users can join shared shopping lists.
           </p>
 
           <ul className="list-disc pl-5 text-sm text-zinc-700 space-y-2">
-            <li>Only authenticated users added to a household can access shared data</li>
+            <li>Only invited and authenticated users can access household data</li>
             <li>Changes sync in real time between household members</li>
-            <li>Access is controlled by the household owner</li>
+            <li>Household access is controlled by the household creator</li>
           </ul>
 
           <p className="text-xs text-zinc-500">
-            Data is not shared with third-party companies.
+            Data is never shared with third-party companies or advertising networks.
           </p>
 
         </section>
@@ -113,11 +117,11 @@ export default function PrivacyPage() {
         {/* DATA RETENTION */}
         <section className="space-y-3">
 
-          <h2 className="text-lg font-semibold">5. Data Retention</h2>
+          <h2 className="text-lg font-semibold">5. Data Retention & Deletion</h2>
 
           <p className="text-sm text-zinc-700">
             Data is retained until you delete it, remove your account, or clear local device storage.
-            You can delete your data at any time through the app settings.
+            You may request deletion of your account and associated data at any time via email or app settings.
           </p>
 
         </section>
@@ -128,7 +132,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">6. Security</h2>
 
           <p className="text-sm text-zinc-700">
-            All data transmitted in synced mode is encrypted in transit using HTTPS/TLS.
+            All cloud-synced data is transmitted using HTTPS/TLS encryption.
             Access to household data is restricted to authorized users only.
           </p>
 
@@ -151,7 +155,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">8. Changes to This Policy</h2>
 
           <p className="text-sm text-zinc-700">
-            This Privacy Policy may be updated as the app evolves. Users will be notified of significant changes.
+            This Privacy Policy may be updated as StapleRun evolves. Users will be notified of significant changes.
           </p>
 
         </section>
@@ -162,10 +166,10 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold">9. Contact</h2>
 
           <p className="text-sm text-zinc-700">
-            If you have any questions, contact:
+            If you have questions about this Privacy Policy, contact:
           </p>
 
-          <p className="text-sm text-zinc-900 font-medium">
+          <p className="text-sm font-medium text-zinc-900">
             support@staplerun.com
           </p>
 
