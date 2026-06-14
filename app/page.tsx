@@ -81,7 +81,7 @@ export default function Page() {
         </div>
 
         <p className="text-xs text-zinc-400">
-          Save 3–5 minutes every shopping trip — automatically.
+          Never rebuild the same grocery list twice.
         </p>
 
       </section>
@@ -118,20 +118,21 @@ export default function Page() {
         <h2 className="text-2xl font-bold">How it works</h2>
 
         <div className="text-sm text-zinc-600 space-y-3">
-          <p>1. Add items while you shop</p>
-          <p>2. StapleRun learns repeat purchases over time</p>
-          <p>3. Your next shopping list is rebuilt automatically</p>
+          <p>1. Create your shopping list normally</p>
+          <p>2. StapleRun learns what you repeatedly buy</p>
+          <p>3. Rebuild future lists with one tap</p>
         </div>
       </section>
 
       {/* SYSTEM */}
       <section className="py-16 text-center max-w-3xl mx-auto px-6 space-y-4">
         <h2 className="text-2xl font-bold">
-          A memory layer for everyday essentials
+          Why StapleRun is different
         </h2>
 
         <p className="text-zinc-600 text-sm">
-          StapleRun turns repeat purchases into “Staples” that automatically rebuild your shopping list.
+          Most shopping apps help you make lists.
+          StapleRun helps you stop making the same list over and over again.
         </p>
       </section>
 
