@@ -18,12 +18,7 @@ function ScreenshotFrame({ src, label }: { src: string; label: string }) {
         <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-black rounded-b-xl z-20" />
 
         <div className="relative w-full aspect-[9/19.5] bg-white rounded-[2.5rem] overflow-hidden">
-          <Image
-            src={src}
-            alt={label}
-            fill
-            className="object-cover object-top"
-          />
+          <Image src={src} alt={label} fill className="object-cover object-top" />
         </div>
       </div>
 
@@ -47,102 +42,137 @@ export default function Page() {
     <div className="min-h-screen bg-white text-zinc-900">
 
       {/* HERO */}
-      <section className="pt-20 pb-14 text-center max-w-3xl mx-auto px-6 space-y-6">
+      <section className="pt-20 pb-12 text-center max-w-3xl mx-auto px-6 space-y-6">
 
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-          Your grocery list should remember itself.
+          Your shopping list should remember itself.
         </h1>
 
         <p className="text-zinc-600 text-lg">
-          StapleRun remembers what you repeatedly buy and rebuilds your shopping list in seconds.
+          StapleRun turns repeated purchases into memory — and rebuilds your shopping lists automatically in seconds.
         </p>
 
         <p className="text-xs text-zinc-500">
-          Built for people who buy the same essentials every week.
+          Built for households, roommates, and anyone with recurring essentials.
         </p>
 
-        {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
 
-          <button
-            disabled
-            className="bg-zinc-900 text-white px-6 py-3 rounded-xl text-sm font-semibold opacity-60 cursor-not-allowed"
-          >
-            🍎 Launching soon on iOS
+          <button className="bg-emerald-600 hover:bg-emerald-700 transition text-white px-6 py-3 rounded-xl text-sm font-semibold">
+            📱 Download on iOS
           </button>
 
-          <button
-            disabled
-            className="bg-zinc-100 border border-zinc-200 px-6 py-3 rounded-xl text-sm font-semibold opacity-60 cursor-not-allowed"
-          >
-            📱 Launching soon on Android
+          <button className="bg-black hover:bg-zinc-900 transition text-white px-6 py-3 rounded-xl text-sm font-semibold">
+            🤖 Get it on Android
           </button>
 
         </div>
 
         <p className="text-xs text-zinc-400">
-          Never rebuild the same grocery list twice.
+          No more rebuilding the same shopping list every week.
         </p>
+
+      </section>
+
+      {/* CORE HOUSEHOLD SYSTEM (REPLACED SECTION) */}
+      <section className="py-10 bg-emerald-50 border-y border-zinc-100 text-center px-6">
+
+        <h2 className="text-2xl font-bold text-zinc-900">
+          One household. Multiple intelligent shopping lists.
+        </h2>
+
+        <div className="text-sm text-zinc-600 max-w-2xl mx-auto mt-2 space-y-2">
+         <p>Each household can create multiple lists for different routines.</p>
+         <p>StapleRun learns your buying patterns and rebuilds them automatically.</p>
+        </div>
+
+        <div className="mt-6 flex flex-wrap justify-center gap-2 text-xs text-zinc-700">
+
+          <span className="bg-white border border-zinc-200 px-3 py-1 rounded-full">
+            🏠 Shared household
+          </span>
+
+          <span className="bg-white border border-zinc-200 px-3 py-1 rounded-full">
+            🧑‍🤝‍🧑 Multiple members
+          </span>
+
+          <span className="bg-white border border-zinc-200 px-3 py-1 rounded-full">
+            🛒 Store-based lists
+          </span>
+
+          <span className="bg-white border border-zinc-200 px-3 py-1 rounded-full">
+            🧠 Purchase memory
+          </span>
+
+        </div>
 
       </section>
 
       {/* BEFORE / AFTER */}
-      <section className="py-14 bg-zinc-50 border-y border-zinc-100">
+      <section className="py-14 bg-white border-y border-zinc-100">
+
         <div className="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10 text-sm">
 
           <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
-            <h3 className="font-bold mb-4">Before StapleRun</h3>
+            <h3 className="font-bold mb-4 text-zinc-900">Before StapleRun</h3>
             <ul className="space-y-2 text-zinc-600 list-disc pl-5">
-              <li>Rewriting the same shopping list every week</li>
-              <li>Forgetting items you always buy</li>
-              <li>Scattered notes across apps</li>
-              <li>Rebuilding lists from scratch</li>
+              <li>Rewriting the same list every week</li>
+              <li>Forgetting recurring essentials</li>
+              <li>Notes scattered across apps</li>
+              <li>Rebuilding from scratch repeatedly</li>
             </ul>
           </div>
 
           <div className="bg-white p-6 rounded-2xl border border-zinc-200/60">
-            <h3 className="font-bold mb-4">After StapleRun</h3>
+            <h3 className="font-bold mb-4 text-emerald-600">After StapleRun</h3>
             <ul className="space-y-2 text-zinc-900 list-disc pl-5">
-              <li>Your list remembers itself</li>
-              <li>One-click rebuild every time</li>
-              <li>Always complete essentials</li>
-              <li>Zero retyping</li>
+              <li>Your habits become memory</li>
+              <li>Each routine has its own smart list</li>
+              <li>Lists rebuild automatically</li>
+              <li>Everything stays aligned</li>
             </ul>
           </div>
 
         </div>
+
       </section>
 
       {/* HOW IT WORKS */}
       <section className="py-14 text-center max-w-3xl mx-auto px-6 space-y-6">
+
         <h2 className="text-2xl font-bold">How it works</h2>
 
         <div className="text-sm text-zinc-600 space-y-3">
-          <p>1. Create your shopping list normally</p>
-          <p>2. StapleRun learns what you repeatedly buy</p>
-          <p>3. Rebuild future lists with one tap</p>
+          <p>1. Create lists for your routines</p>
+          <p>2. StapleRun learns repeated purchases</p>
+          <p>3. Lists rebuild automatically</p>
         </div>
+
       </section>
 
-      {/* SYSTEM */}
-      <section className="py-16 text-center max-w-3xl mx-auto px-6 space-y-4">
-        <h2 className="text-2xl font-bold">
-          Why StapleRun is different
-        </h2>
+      {/* WHY DIFFERENT */}
+      <section className="py-14 text-center max-w-3xl mx-auto px-6 space-y-4">
+
+        <h2 className="text-2xl font-bold">Why StapleRun is different</h2>
 
         <p className="text-zinc-600 text-sm">
-          Most shopping apps help you make lists.
-          StapleRun helps you stop making the same list over and over again.
+          Most apps help you manage lists.
+          <span className="text-emerald-600 font-medium">
+            {" "}StapleRun removes the need to recreate them.
+          </span>
         </p>
+
       </section>
 
       {/* CAROUSEL */}
       <section className="py-20">
+
         <div className="text-center mb-10">
           <h2 className="text-2xl font-bold">See it in action</h2>
         </div>
 
         <div className="relative flex justify-center h-[650px]">
+
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -158,45 +188,30 @@ export default function Page() {
               />
             </motion.div>
           </AnimatePresence>
+
         </div>
-      </section>
 
-      {/* HOUSEHOLD */}
-      <section className="py-14 bg-zinc-50 border-y border-zinc-100 text-center px-6">
-        <h3 className="text-lg font-bold mb-2">
-          Built for individuals and shared households
-        </h3>
-
-        <p className="text-sm text-zinc-600 max-w-2xl mx-auto">
-          Optional real-time sync keeps shopping lists aligned across devices.
-        </p>
       </section>
 
       {/* FINAL CTA */}
       <section className="py-20 text-center max-w-2xl mx-auto px-6 space-y-6">
 
         <h2 className="text-3xl font-bold">
-          Stop rebuilding your list every week
+          Stop rebuilding your shopping list every week
         </h2>
 
         <p className="text-zinc-600 text-sm">
-          Let your routine build your grocery list automatically.
+          Let your routine become your system.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
 
-          <button
-            disabled
-            className="bg-zinc-900 text-white px-6 py-3 rounded-xl text-sm font-semibold opacity-60 cursor-not-allowed"
-          >
-            🍎 Launching soon
+          <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl text-sm font-semibold transition">
+            📱 Get the App
           </button>
 
-          <button
-            disabled
-            className="bg-zinc-100 border border-zinc-200 px-6 py-3 rounded-xl text-sm font-semibold opacity-60 cursor-not-allowed"
-          >
-            📱 Launching soon
+          <button className="bg-black hover:bg-zinc-900 text-white px-6 py-3 rounded-xl text-sm font-semibold transition">
+            🔥 Install on Android
           </button>
 
         </div>
@@ -206,18 +221,16 @@ export default function Page() {
       {/* FOOTER */}
       <footer className="border-t border-zinc-100 py-10 text-center">
 
-        <p className="text-xs text-zinc-500 mb-4">
-          Privacy-first • Guest mode supported • Optional household sync
+        <p className="text-xs text-emerald-600 mb-4">
+          Privacy-first • Guest mode supported • Multi-list memory system
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-zinc-400">
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/privacy" className="hover:text-emerald-600">Privacy</a>
           <span>•</span>
-          <a href="/terms">Terms of Service</a>
+          <a href="/terms" className="hover:text-emerald-600">Terms</a>
           <span>•</span>
-          <a href="/delete-account">Delete Account</a>
-          <span>•</span>
-          <a href="/support">Support</a>
+          <a href="/support" className="hover:text-emerald-600">Support</a>
         </div>
 
         <p className="mt-4 text-[11px] text-zinc-300">
